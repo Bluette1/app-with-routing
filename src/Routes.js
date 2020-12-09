@@ -6,9 +6,9 @@ import Profile from "./Profile";
 const Routes = () => {
   return (
     <BrowserRouter>
-      <Switch>
-      <Route path="/profile" component={Profile} />
-        <Route path="/" component={App} />
+      <Switch> 
+      <Route exact path="/" component={App} />
+      <Route exact path="/profile" component={Profile} />
       </Switch>
     </BrowserRouter>
   );
